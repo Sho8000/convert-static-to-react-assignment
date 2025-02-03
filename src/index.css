@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ******* GLOBAL VALUES ******* */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Remove Default Button Styles */
+button {
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+/* button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+  } */
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+:root {
+  --parrallax-value: 100px;
+}
+
+.parallax-scroll {
+  padding: 20px;
+  margin: 10px 20px;
+  padding-left: 10px;
+  margin-left: 10px;
+  color: black;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 200;
+
+  padding-bottom: 0;
+  margin-bottom: 0;
+}

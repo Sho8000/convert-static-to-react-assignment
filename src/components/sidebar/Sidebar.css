@@ -1,0 +1,127 @@
+.nabBtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 100%;
+  transform: translate(-150%,50%);
+  background-image: radial-gradient(black, rgb(71, 71, 71), gray);
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.sidebar{
+  z-index: 20;
+  min-width: 100vw;
+  min-height: 100vh;
+  
+  position: fixed;
+  top: 0%;
+  left: 0px;
+  background-color: #FFFFFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.visibility-hidden{
+  visibility: hidden;
+}
+
+.navigation-container{
+  display: flex;
+  justify-content: stretch;
+  /* align-content: center; */
+  align-items: center;
+  flex-direction: column;
+  width: 50%; 
+  min-height: 100vh;
+
+  /* transform: translateX(-50%); */
+  /* border: red 2px solid; */
+
+  
+}
+.sidebar-logo{
+  display: flex;
+  width: 100%;
+  min-height: 45vh;
+  
+  background-image: url("./images/stamp.jpg");
+  background-size:  contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  margin-top: 0px;
+
+}
+
+.sidebar-logo > img{
+  width: 15%;
+  /* background-size: cover; */
+  /* max-height: 50%; */
+  
+  /* background-position: center; */
+} 
+
+* a{
+  text-decoration: none;
+  color: black;
+}
+.navigation-text{
+  transform: rotateZ(90deg);
+
+  padding-left: 60px;
+  letter-spacing: 3.2px;
+  line-height: 48px;
+}
+.navigation-text h4{
+  font-style: normal;
+  font-weight: 150;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+
+.cross-button{
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  transition: 0.23s linear;
+  cursor: pointer;
+}
+.cross-button::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate3d(-50%,-50%,0);
+  background-color: red;
+  opacity: 0.0;
+}
+.cross-button:hover {
+  transform: rotateZ(180deg);
+}
+
+.cross-line-1{
+  height: 1px;
+  width: 80px;
+  background-color: black;
+  transform: rotateZ(45deg);
+}
+.cross-line-2{
+  height: 1px;
+  width: 80px;
+  background-color: black;
+  transform: rotateZ(-45deg);
+}
+
